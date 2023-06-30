@@ -1,5 +1,5 @@
 import './App.css'
-import logoYT from './assets/images/logoYT.png'
+
 
 export function ObjetivosTutorial() {
     return (
@@ -25,11 +25,11 @@ export function ObjetivosTutorial() {
 
                                 </div>
                                 <div className='col-4 inputLinea'>
-                                    <h3>Linea 1</h3>
+                                    <h3 className='h3Blanco'>Linea 1</h3>
                                 </div>
 
                                 <div className='col-4 inputLinea'>
-                                    <h3>Linea 2</h3>
+                                    <h3 className='h3Blanco'>Linea 2</h3>
                                 </div>
                             </div>
 
@@ -126,35 +126,30 @@ export function ObjetivosTutorial() {
                         </div>
 
                         <h2>Necesitas Ayuda?</h2>
-                        <h3>Si tienes problemas</h3>
-                        <h3>Para usar la aplicacion web</h3>
-                        <h3>Haz Click Aqui!</h3>
+                        <h2 className='h3Blanco'>Si tienes problemas</h2>
+                        <h2 className='h3Blanco'>Para usar la aplicacion web</h2>
+                        <h2 className='h3Blanco'>Haz Click Aqui!</h2>
                         <h4>Para ver el tutorial</h4>
 
+                        <div className='container-fluid'>
+                            <a type="button" className='btn btnTutorial'
+                                href="https://www.youtube.com/watch?v=HJqlA_HTEU8&list=RDHJqlA_HTEU8&start_radio=1"
+                                target='_blank'>
 
-                        <a type="button" className='btn btnTutorial'
-                            href="https://www.youtube.com/watch?v=HJqlA_HTEU8&list=RDHJqlA_HTEU8&start_radio=1"
-                            target='_blank'>
-                            <div className='row'>
-                                <div className='col-4'>
-                                    <img className="logoYT" src={logoYT} alt=""/>
-                                </div>
-                                <div className='col-8'>
-                                    <span>
-                                        Ver Tutorial
-                                    </span>
-                                </div>
-                            </div>
+                                <h3>&#9654; Ver Tutorial</h3>
+
+                            </a>
+                        </div>
 
 
-                        </a>
+
                         {/* Target= _blank es para abrir el tutorial en una nueva pestana */}
 
 
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

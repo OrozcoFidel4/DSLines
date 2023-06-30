@@ -1,13 +1,30 @@
-h1 {
-  color: aliceblue !important;
-  font-family: BEBAS NEUE;
+@font-face {
+  font-family: MadeInfinity;
+  src: url("./styles/MADEINFINITYPERSONALUSE-Thin.ttf");
 }
 
-h2,h3,h4,h5{
+
+h1 {
+  color: aliceblue !important;
+  font-family: BEBAS NEUE; 
+  /* font-family: Gunship; */
+}
+
+h2,h4,h5{
             color: aliceblue !important;
-            font-family: Futura Bk BT;
+            font-family: MadeInfinity;
             
         }
+
+h3{
+  color: rgb(24, 24, 24);
+  font-family: MadeInfinity;
+}
+
+.h3Blanco{
+  color: aliceblue !important;
+  font-family: MadeInfinity;
+}
 
 .centrar{
   display: flex;
@@ -28,7 +45,7 @@ h2,h3,h4,h5{
 }
 
 .contenedor{
-    border: 2px solid aliceblue; 
+    /* border: 2px solid aliceblue;  */
     border-radius: 8px;
     margin-left: 5px;
     margin-right: 5px;
@@ -41,7 +58,7 @@ h2,h3,h4,h5{
 
 .contenedor2{
   overflow-x: hidden; 
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
 }
 
@@ -73,16 +90,29 @@ h2,h3,h4,h5{
 }
 
 .btnTutorial{
-  background-color: #ffffff !important;
-  margin-top: 30px; 
-  margin-bottom: 80px;
+  background-color: #ffd146 !important;
+  width: 250px;
+  height: 50px;
+  margin-top: 25px; 
+  margin-bottom: 60px;
   color: rgb(24, 24, 24) !important;
-  
 }
 
 .btnTutorial:hover{
   background-color: rgb(24, 24, 24) !important;
-  color:aliceblue !important;
+  color:#ffd146 !important;
+}
+
+@media (max-width:930px) {
+  .btnTutorial{
+    width: 130px;
+    height: 35px; 
+    margin-bottom: 40px;
+  }
+  h3{
+    font-size:smaller !important;
+  }
+  
 }
 
 .azul{
@@ -111,7 +141,7 @@ h2,h3,h4,h5{
 
 .porcentaje{
   color: rgb(240, 248, 255); 
-  font-family: Futura Bk BT;
+  font-family: MadeInfinity;
 }
 
 .dona{
@@ -135,4 +165,8 @@ h2,h3,h4,h5{
 .logoYT{
   width: 30px;
   height: 30px;
+}
+
+.centrarVertical{
+  align-items: center !important;
 }
